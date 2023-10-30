@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --body-color: #080b16;
+    --body-alter-color: #0b0f1b;
+    --container-color: #0d111f;
+    --text-color: #fff;
+}
+body{
+    color: var(--text-color);
+    background: var(--body-color);
+}
+.container{
+    min-height: 100vh;
+    max-width: 1060px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    padding: 2rem 0 3rem;
+}
+.heading{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.price-plan{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(337px, auto));
+    gap: 1.5rem;
+}
+.price-box{
+    background: var(--container-color);
+    border-radius: 1rem;
+}
+.top-box{
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    line-gap-override: var(--body-alter-color);
+}
+.p-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.single{
+    color: rgb(45 212 191);
+}
+.price{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.price span{
+    font-size: 1.075rem;
+    font-weight: 500;
+    color: rgb(160 164 194);
+}
+.btn{
+    color: var(--text-color);
+    background: rgb(45 212 191 / 80%);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: .6rem;
+    margin: 1rem;
+}
+.btn:hover{
+    transition: .3s all ease;
+}
+.single-btn{
+    background: rgb(45 212 191 / 70%);
+}
+.top-box{
+    font-size: .875rem;
+    color: #178fff;
+    text-align: center;
+}
+.button-box{
+    padding: 30px;
+}
+.p-box{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(30 41 58);
+}
+.p-box .bx{
+    font-size: 1.5rem;
+    color: rgb(5 150 105);
+}
+.p-box p{
+    font-size: .875rem;
+    font-weight: 400;
+}
+.premium{
+    color: #818cf8;
+}
+.premium-btn{
+    background: #4f46e5;
+}
+.premium-btn:hover{
+    background: rgb(79 70 228 / 80%);
+}
+.business{
+    color: #fbbf24;
+}
+.business-btn{
+    background: #ffb700;
+}
+.business-btn:hover{
+    background: rgb(217 119 6 / 80%);
+}
+
+
+/* ======================================== MEDIA QUERRIES ======================================== */
+@media screen and (max-width: 1050px) {
+    .price-plan{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .price-plan{
+        grid-template-columns: 1fr;
+    }
+}
