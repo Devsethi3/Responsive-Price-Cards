@@ -27,7 +27,7 @@ body{
 .heading{
     text-align: center;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 2rem;
 }
 .price-plan{
@@ -80,6 +80,9 @@ body{
 .single-btn{
     background: rgb(45 212 191 / 70%);
 }
+.single-btn:hover{
+    background: rgba(36, 170, 152, 0.7);
+}
 .top-box{
     font-size: .875rem;
     color: #178fff;
@@ -110,7 +113,7 @@ body{
     background: #4f46e5;
 }
 .premium-btn:hover{
-    background: rgb(79 70 228 / 80%);
+    background: rgba(67, 60, 197, 0.8);
 }
 .business{
     color: #fbbf24;
@@ -119,7 +122,7 @@ body{
     background: #ffb700;
 }
 .business-btn:hover{
-    background: rgb(217 119 6 / 80%);
+    background: #ca9100;
 }
 
 
